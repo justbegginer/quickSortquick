@@ -39,7 +39,8 @@ public class Main {
     private static int[] listToArray(List inputList){
         int[] resultArray = new int[inputList.size()];
         for (int i = 0; i < resultArray.length; i++) {
-            resultArray[i] =(int) inputList.get(i);
+            resultArray[i] =(int) inputList.get(0);
+            inputList.remove(0);
         }
         return resultArray;
     }
